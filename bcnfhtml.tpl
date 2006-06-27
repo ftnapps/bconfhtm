@@ -3,8 +3,9 @@
   <head>
     <meta http-equiv="content-type" content="charset=UTF-8" />
     <meta name="Author" content="Robert James Clay" />
-    <meta name="Generator" content="bcnfhtml.pl v0.1" />
-    <meta name="Expires" content="<TMPL_VAR NAME="PAGEEXPIRES">" />
+    <meta name="Keywards" content="fidonet, FTN, Statistics" />
+    <meta name="Generator" content="bconfhtm.pl v0.1" />
+    <meta HTTP-EQUIV="EXPIRES" content="<TMPL_VAR NAME="PAGEEXPIRES">" />
 
     <link rel="stylesheet" type="text/css" href="./bbbs.css"  />
     <title>BBBS Conference Stats </title>
