@@ -1,4 +1,6 @@
-To do:  bconfhtm.pl    6/26/06
+To do:  bconfhtm    6/26/06
 
-
+bcnfhtml.tpl
+6/26/06 - Expires meta: per RFC 2068, HTTP timestamps should be in GMT and
+	in RFC 1123 format. (Mon, 22 Jul 2002 11:12:01 GMT) -> check & fix
  
