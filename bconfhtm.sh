@@ -1,5 +1,5 @@
 #!/bin/sh
-# bconfhtm.sh - v0.1
+# bconfhtm.sh - v0.2
 #
 BBBSDIR=/opt/bbbs
 SCRIPTS=$BBBSDIR/scripts

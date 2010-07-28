@@ -4,7 +4,7 @@
     <meta http-equiv="content-type" content="charset=UTF-8" />
     <meta name="Author" content="Robert James Clay" />
     <meta name="Keywards" content="fidonet, FTN, Statistics" />
-    <meta name="Generator" content="bconfhtm.pl v0.1" />
+    <meta name="Generator" content="bconfhtm.pl v0.2" />
     <meta HTTP-EQUIV="EXPIRES" content="<TMPL_VAR NAME="PAGEEXPIRES">" />
 
     <link rel="stylesheet" type="text/css" href="./bbbs.css"  />
