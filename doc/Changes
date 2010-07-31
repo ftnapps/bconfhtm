@@ -1,6 +1,18 @@
 Changes
 --------
+
+31 Jul 10
+    - README:  Add bconfhtm usage and support information.  Correct
+      one of the contact email addresses.  Minor edits.  
+    - Reword & edit Help subroutine in bconfhtm.pl.
+    
+28 Jul 10
+    - Bump bconfhtm version to v0.2
+    - Update bconfhtm copyright years to include the year 2010.
+    _ Correct declaration of option variables in bconfhtm.pl. 
+  
 26 Jun 06
-bcnfhtml.tpl - corrections & additions to meta's
- - initial import of bconfhtm.pl into cvs at ftnpl.sourceforge.net
+    - Released as v0.1
+    - Corrections & additions to meta's in bcnfhtml.tpl template file.
+    - Initial import of bconfhtm.pl into cvs at ftnpl.sourceforge.net.
  
