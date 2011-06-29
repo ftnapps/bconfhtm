@@ -1,5 +1,5 @@
 #!/usr/bin/perl
-#  bconfhtm.pl v0.2  Copyright (c) 2006-2010 Robert James Clay 
+#  bconfhtm.pl  Copyright (c) 2006-2010 Robert James Clay 
 #  Used to creat a BBBS Conference Statistics HTML page for a BBBS system.
 #  All Rights Reserved. This is free software;  you can redistribute
 #  it and/or modify it under the same terms as Perl itself.
@@ -7,7 +7,7 @@
 use warnings;
 use strict;
 
-my $Version = "0.2";
+my $Version = "0.3";
 
 use File::Slurp;
 use HTML::Template;

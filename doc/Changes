@@ -1,7 +1,11 @@
 Changes
 --------
 
+29 Jun 11
+    - Bump bconfhtm version to v0.3
+
 31 Jul 10
+    - Released as v0.2
     - README:  Add bconfhtm usage and support information.  Correct
       one of the contact email addresses.  Minor edits.  
     - Reword & edit Help subroutine in bconfhtm.pl.
