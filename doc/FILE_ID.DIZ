@@ -1,4 +1,4 @@
-bconfhtm.pl v0.3
+bconfhtm.pl v0.x
 Perl script that creates an html page
 from a file resulting from the BBBS
 command 'bbbs bconf'.  Requires the
