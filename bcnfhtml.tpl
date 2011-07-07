@@ -14,7 +14,7 @@
 
   <body>
 	
-    <h1>b4mp.rocasa.org	</h1>
+    <h1>example.org</h1>
     <h2>BBBS Conference Statistics</h2>
 
     <pre>
