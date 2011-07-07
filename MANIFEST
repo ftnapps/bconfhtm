@@ -2,6 +2,7 @@ Changes
 MANIFEST
 Makefile.PL
 README
+bin/bconfhtm.sh
 bin/bconfhtm.pl
 doc/bcnfhtml.tpl
 doc/TODO
