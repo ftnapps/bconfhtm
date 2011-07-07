@@ -3,3 +3,5 @@ MANIFEST
 Makefile.PL
 README
 bin/bconfhtm.pl
+doc/bcnfhtml.tpl
+doc/TODO
