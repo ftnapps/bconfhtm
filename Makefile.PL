@@ -13,6 +13,7 @@ WriteMakefile(
     EXE_FILES           => [ qw( bin/bconfhtm.pl ) ],
     PL_FILES            => {},
     PREREQ_PM => {
+        'Readonly'  	 	=> 0,
         'Getopt::Std'   	=> 0,
         'File::Slurp'   	=> 0,
         'HTML::Template'   	=> 0,

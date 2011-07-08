@@ -1,33 +1,38 @@
 #!/usr/bin/perl
 #  bconfhtm.pl  Copyright (c) 2006-2011 Robert James Clay 
-#  Used to creat a BBBS Conference Statistics HTML page for a BBBS system.
+#  Used to create a BBBS Conference Statistics HTML page for a BBBS system.
 #  All Rights Reserved. This is free software;  you can redistribute
 #  it and/or modify it under the same terms as Perl itself.
 
 use warnings;
 use strict;
 
-my $Version = "0.3";
+our $VERSION = '0.3';
 
 use File::Slurp;
 use HTML::Template;
 use Getopt::Std;
 
-our ($opt_t $opt_o $opt_s $opt_f $opt_l $opt_x $opt_h);
+#our ($opt_t $opt_o $opt_s $opt_f $opt_l $opt_x $opt_h);
+use vars qw/ $opt_t $opt_o $opt_s $opt_f $opt_l $opt_x $opt_h /;
 my ($STATFILE, $TEMPLATE, $WORKDIR, $HTMLFILE, $expires, $expiry, $logfile, $DEBUG);
 
+use Readonly;
+Readonly my $DAYOFSECS => 86_400;
+Readonly my $NINETEENTH => 1900;
 
 getopts('t:o:f:s:l:xh');
 
-&ParseCommandLine();
+parse_command_line();
 
 # set BBBS base directory
-my $BBBSDIR = "/opt/bbbs";
+my $BBBSDIR = '/opt/bbbs';
 
 #get current time as timestamp
 my $timestamp = time();
 # set page expiration time
-$expiry = 86400;	# 86400 seconds, equals 1 day
+# 86,400 seconds, equals 1 day
+$expiry = $DAYOFSECS;
 
 $expires = gmtime($timestamp + $expiry);
 
@@ -47,84 +52,96 @@ $template->param(BCONFSTATS => $bconfstats);
 
 $template->param(DAY => $day);
 $template->param(MON => ($mon + 1));
-$template->param(YEAR => ($year + 1900));
+$template->param(YEAR => ($year + $NINETEENTH));
 $template->param(HOURS => $hour);
 $template->param(MINS => $min);
 
 # create new version of conference stats html page
 my $newpage="$WORKDIR/$HTMLFILE";
 # open filehandle FH for write
-open(FH, "> $newpage") || die $!;
+my open $fh, q{>}, $newpage) || croak $!;
 
 # use the function to send the new contents to the new version of the file
-$template->output(print_to => *FH);    
+$template->output(print_to => *$fh);
 
 # close the filehandle
-close(FH);
+close($fh) or croak "Unable to close: $!";
 
-exit(0);
+exit 0;
 
 ################################################
 ## Subroutines
 ##
 ############################################
-# ParseCommandLine
+# parse_command_line
 ############################################
-sub ParseCommandLine {
+sub parse_command_line {
 
     if ($opt_h) {
-        &DisplayHelp();
-	exit(1);
+        display_help();
+        exit 1;
     }
 
     if ($opt_x) {
-	$DEBUG = $opt_x;	# set debug flag
-	undef $opt_x;
-	print "\nDebug flag is set ...\n";
+        # set debug flag
+        $DEBUG = $opt_x;
+        undef $opt_x;
+        print "\nDebug flag is set ...\n";
     } else {
-	$DEBUG = 0;
+       $DEBUG = 0;
     }
-	
+
     if ($opt_t) {
-	$TEMPLATE=$opt_t;  # this needs to be the filename & path
-	undef $opt_t;
+        $TEMPLATE=$opt_t;  # this needs to be the filename & path
+        undef $opt_t;
     } else {
-	$TEMPLATE="/opt/bbbs/work/bcnfhtml.tpl";	# default template file
+        # default template file
+        $TEMPLATE='/opt/bbbs/work/bcnfhtml.tpl';
     }
 
     if ($opt_o) {
-	$WORKDIR=$opt_o;  # this needs to be the filename & path 
-	undef $opt_o;
+        # this needs to be the filename & path 
+        $WORKDIR=$opt_o;
+        undef $opt_o;
     } else {
-	$WORKDIR="/opt/bbbs/work";	# default working dir
+       # default working directory
+        $WORKDIR='/opt/bbbs/work';
     }
 
     if ($opt_s) {
-	$STATFILE=$opt_s;  # this needs to be the filename & path
-	undef $opt_s;
+        # this needs to be the filename & path
+        $STATFILE=$opt_s;
+        undef $opt_s;
     } else {
-	$STATFILE="/opt/bbbs/work/bconf.txt";	# default stats file
+        # default stats file
+        $STATFILE='/opt/bbbs/work/bconf.txt';
     }
 
     if ($opt_f) {
-	$HTMLFILE=$opt_f;  # this needs to be the filename & path
-	undef $opt_f;
+        # this needs to be the filename & path
+        $HTMLFILE=$opt_f;
+        undef $opt_f;
     } else {
-	$HTMLFILE="/opt/bbbs/work/bcnfstat.htm";	# default stats file
+        # default stats file
+        $HTMLFILE='/opt/bbbs/work/bcnfstat.htm';
     }
 
     if ($opt_l) {
-	$logfile=$opt_l;  # this needs to be the filename & path for a logfile 
-	undef $opt_l;
+        # this needs to be the filename & path for a logfile 
+        $logfile=$opt_l;
+        undef $opt_l;
     } else {
-	my $logfile="/opt/bbbs/logs/wwwadm.log";	# default log file
+        # default log file
+        $logfile='/opt/bbbs/logs/wwwadm.log';
     }
-    
+
+    return();
+
 }
 ############################################
 # Help
 ############################################
-sub DisplayHelp {
+sub display_help {
     print "\nUsage:  bconfhtm.pl [-t Template] [-o HTMLDir] [-s StatsFile] / \n";
     print "                       [-f HTMLFileName] [-l LogFile] [-x] [-h]\n\n";
     print "   -t   HTML page template file;  defaults to /opt/bbbs/work/bcnfhtml.tpl. \n";
@@ -137,5 +154,7 @@ sub DisplayHelp {
     print "   -x   Debug Mode\n";
     print "   -h   This Help\n";
     print "\n";
+
+    return();
 }
 
