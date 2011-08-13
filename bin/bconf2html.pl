@@ -12,6 +12,7 @@ our $VERSION = '0.3';
 use File::Slurp;
 use HTML::Template;
 use Getopt::Std;
+use Carp;
 
 our ($opt_t, $opt_o, $opt_s, $opt_f, $opt_l, $opt_x, $opt_h);
 my ($STATFILE, $TEMPLATE, $WORKDIR, $HTMLFILE, $expires, $expiry, $logfile, $DEBUG);
