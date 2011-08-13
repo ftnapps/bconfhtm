@@ -1,5 +1,5 @@
 #!/usr/bin/perl
-#  bconfhtm.pl  Copyright (c) 2006-2011 Robert James Clay 
+#  bconf2html.pl  Copyright (c) 2006-2011 Robert James Clay 
 #  Used to create a BBBS Conference Statistics HTML page for a BBBS system.
 #  All Rights Reserved. This is free software;  you can redistribute
 #  it and/or modify it under the same terms as Perl itself.
@@ -141,7 +141,7 @@ sub parse_command_line {
 # Help
 ############################################
 sub display_help {
-    print "\nUsage:  bconfhtm.pl [-t Template] [-o HTMLDir] [-s StatsFile] / \n";
+    print "\nUsage:  bconf2html.pl [-t Template] [-o HTMLDir] [-s StatsFile] / \n";
     print "                       [-f HTMLFileName] [-l LogFile] [-x] [-h]\n\n";
     print "   -t   HTML page template file;  defaults to /opt/bbbs/work/bcnfhtml.tpl. \n";
     print "   -o   Directory where the resulting HTML file should be put.\n";
