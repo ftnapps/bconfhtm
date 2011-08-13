@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="content-type" content="charset=UTF-8" />
     <meta name="Author" content="Robert James Clay" />
-    <meta name="Keywards" content="fidonet, FTN, Statistics" />
+    <meta name="Keywords" content="Fidonet, FTN, Statistics" />
     <meta name="Generator" content="bconfhtm.pl v0.3" />
     <meta HTTP-EQUIV="EXPIRES" content="<TMPL_VAR NAME="PAGEEXPIRES">" />
 
