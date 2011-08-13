@@ -58,7 +58,7 @@ $template->param(MINS => $min);
 # create new version of conference stats html page
 my $newpage="$WORKDIR/$HTMLFILE";
 # open filehandle FH for write
-my open $fh, q{>}, $newpage) || croak $!;
+open my $fh, q{>}, $newpage || croak $!;
 
 # use the function to send the new contents to the new version of the file
 $template->output(print_to => *$fh);
