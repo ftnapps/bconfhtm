@@ -13,8 +13,7 @@ use File::Slurp;
 use HTML::Template;
 use Getopt::Std;
 
-#our ($opt_t $opt_o $opt_s $opt_f $opt_l $opt_x $opt_h);
-use vars qw/ $opt_t $opt_o $opt_s $opt_f $opt_l $opt_x $opt_h /;
+our ($opt_t, $opt_o, $opt_s, $opt_f, $opt_l, $opt_x, $opt_h);
 my ($STATFILE, $TEMPLATE, $WORKDIR, $HTMLFILE, $expires, $expiry, $logfile, $DEBUG);
 
 use Readonly;
