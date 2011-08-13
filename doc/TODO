@@ -1,5 +1,18 @@
-To do:  bconfhtm    7/31/10
+To Do:  bconfhtm    8/13/11
+
+bconf2html.pl
+
+    - Change to using a simple config file, which points to the directories and
+    files needed by the script.
+
+    - Move example shell script into POD documentation in bconfhtm script?
+
+    - Have configurable/optional expiry times, instead of just the default 1 day?
+
+    - Expires meta: per RFC 2068, HTTP timestamps should be in GMT and
+      in RFC 1123 format. (Mon, 22 Jul 2002 11:12:01 GMT) -> check & fix
 
 bcnfhtml.tpl
+
     - Expires meta: per RFC 2068, HTTP timestamps should be in GMT and
       in RFC 1123 format. (Mon, 22 Jul 2002 11:12:01 GMT) -> check & fix

@@ -1,0 +1,8 @@
+Changes
+MANIFEST
+Makefile.PL
+README
+bin/bconfhtm.sh
+bin/bconf2html.pl
+doc/bcnfhtml.tpl
+doc/TODO

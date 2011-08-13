@@ -1,0 +1,37 @@
+Changes
+--------
+
+13 Aug 11
+    - Released as v0.3
+    - Cleanup of whitespace in some files.
+    - Explicitly 'use Carp' in bconf2html.pl
+    - Rename bin/bconfhtm.pl as bin/bconf2html.pl
+    - Correct the 'file open' line in bin/bconf2html.pl
+    - Fix declaration of option variables in bconf2html.pl
+
+ 7 Jul 11
+    - Reorganize the bconfhtm source directory.
+    - Edit line 6 of bcnfhtml.tpl to correct spelling, etc.
+    - Use example.org for domain in example bcnfhtml.tpl file.
+    - Update the README file about bconfhtm being at GitHub.
+    - General cleanup of bconfhtm script, referencing Perl::Tidy.
+
+29 Jun 11
+    - Bump bconfhtm version to v0.3
+    - Update bconfhtm copyright years to include the year 2011.
+
+31 Jul 10
+    - Released as v0.2
+    - README:  Add bconfhtm usage and support information.  Correct
+      one of the contact email addresses.  Minor edits.  
+    - Reword & edit Help subroutine in bconfhtm.pl.
+
+28 Jul 10
+    - Bump bconfhtm version to v0.2
+    - Update bconfhtm copyright years to include the year 2010.
+    - Correct declaration of option variables in bconfhtm.pl. 
+
+26 Jun 06
+    - Released as v0.1
+    - Corrections & additions to meta's in bcnfhtml.tpl template file.
+    - Initial import of bconfhtm.pl into cvs at ftnpl.sourceforge.net.
