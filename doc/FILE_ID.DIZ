@@ -2,6 +2,6 @@ bconf2html.pl v0.x
 Perl script that creates an html page
 from a file resulting from the BBBS
 command 'bbbs bconf'.  Requires the
-HTML::Template modulue.  See README
+HTML::Template module.  See README
 for more information.
 
