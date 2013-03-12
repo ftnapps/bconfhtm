@@ -1,6 +1,12 @@
 Changes
 --------
 
+12 May 13
+    - Released as v0.4
+    - Update bconfhtm copyright years to include the year 2013.
+    - Correct the spelling of the word 'module' in doc/FILE_ID.DIZ.
+    - Update the GitHub URLs in the README file to github.com/ftnapps/bconfhtm.
+
 13 Aug 11
     - Released as v0.3
     - Cleanup of whitespace in some files.
