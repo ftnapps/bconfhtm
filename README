@@ -1,6 +1,6 @@
 bconf2html.pl 
 
-Copyright (c) 2006-2011 Robert James Clay
+Copyright (c) 2006-2013 Robert James Clay
 All Rights Reserved. This is free software;  you can redistribute
 it and/or modify it under the same terms as Perl itself.
 
@@ -22,14 +22,14 @@ Options:
 It is hosted at the FTN for Perl project at Sourceforge and the original code
 for it can be browsed for in the SVN repository at:
  http://ftnpl.svn.sourceforge.net/viewvc/ftnpl/trunk/scripts/BBBS/bconfhtm/
-The current code for it can be found at the GIT repository at the bbbsdeb
+The current code for it can be found at the GIT repository at the ftnapps
 project at GitHub:  
-http://github.com/bbbsdeb/bconfhtm.
+http://github.com/ftnapps/bconfhtm.
 
 Archives of it can be found in the Project file downloads section.  They can
 also be found on any FTN system that carries the BBBSUTIL File Echo, which is
 distributed via the Filegate (www.filegate.net). Or they can be obtained from
-the downloads section of the bconfhtm repository at GitHub.com/bbbsdeb/bconfhtm.
+the downloads section of the bconfhtm repository at GitHub.com/ftnapps/bconfhtm.
 
 The ftnpl-user or ftnpl-develop mailing lists are available from the project site;
 however, the FTN echo BBBS.ENGLISH is the preferred avenue for support.
@@ -75,4 +75,5 @@ Installation
 Robert J. Clay, 1:120/546@fidonet
 jame@users.sf.net, jame@rocasa.us
 http://ftnpl.sourceforge.net
-http://github.com/bbbsdeb/bconfhtm
+http://ftnapps.github.io/bconfhtm/index.html
+
